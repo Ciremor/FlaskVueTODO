@@ -1,0 +1,12 @@
+version: "3.3"               
+services:                    
+    back:                    
+        build: appli          
+        container_name: back 
+        ports:               
+          - 5001:5001        
+    front:                   
+        build: todolist-project         
+        container_name: front
+        ports:               
+         - 8080:8080  
